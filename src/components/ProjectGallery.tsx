@@ -1,6 +1,7 @@
 // components/ProjectGallery.tsx
 import React from 'react';
 import { MediaItem } from '../types';
+import Image from 'next/image';
 
 interface ProjectGalleryProps {
   media: MediaItem[];
@@ -12,7 +13,7 @@ const ProjectGallery: React.FC<ProjectGalleryProps> = ({ media }) => {
       {media.map((item, index) => (
         <div key={index} className="rounded overflow-hidden shadow-lg">
           {item.type === 'image' ? (
-            <img
+            <Image
               src={item.src}
               alt={item.alt || `Media ${index + 1}`}
               className="w-full h-auto object-cover"

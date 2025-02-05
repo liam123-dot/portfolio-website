@@ -9,13 +9,13 @@ const Home: React.FC = () => {
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
       <Head>
         <title>Liam Buchanan - Portfolio</title>
-        <meta name="description" content="Portfolio website of Your Name" />
+        <meta name="description" content="Portfolio website of Liam Buchanan - Porfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className="container mx-auto px-4 py-8">
         <header className="mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white">Your Name</h1>
+          <h1 className="text-4xl font-bold text-gray-900 dark:text-white">Liam Buchanan - Porfolio</h1>
           <p className="mt-2 text-gray-700 dark:text-gray-300">
             Hi there, thank you for looking at my portfolio website. Here I show some of the projects I have made that I am proud of.
             I am currently a student at the University of Exeter, set to finish my bachelors in July 2025. I am an advanced Python developer,
