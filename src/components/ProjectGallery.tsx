@@ -4,13 +4,13 @@ import { MediaItem } from '../types';
 import Image from 'next/image';
 
 interface ProjectGalleryProps {
-  media: MediaItem[];
+  media?: MediaItem[];
 }
 
 const ProjectGallery: React.FC<ProjectGalleryProps> = ({ media }) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-      {media.map((item, index) => (
+      {media && media.map((item, index) => (
         <div key={index} className="rounded overflow-hidden shadow-lg">
           {item.type === 'image' ? (
             <Image
