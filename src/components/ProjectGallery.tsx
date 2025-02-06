@@ -16,6 +16,8 @@ const ProjectGallery: React.FC<ProjectGalleryProps> = ({ media }) => {
             <Image
               src={item.src}
               alt={item.alt || `Media ${index + 1}`}
+              width={'10000'}
+              height={'10000'}
               className="w-full h-auto object-cover"
             />
           ) : item.type === 'video' ? (
