@@ -1,7 +1,9 @@
 // components/ProjectGallery.tsx
-import React from 'react';
+'use client'
+import React, { Suspense } from 'react';
 import { MediaItem } from '../types';
 import Image from 'next/image';
+import ReactPlayer from 'react-player';
 
 interface ProjectGalleryProps {
   media?: MediaItem[];
@@ -21,10 +23,15 @@ const ProjectGallery: React.FC<ProjectGalleryProps> = ({ media }) => {
               className="w-full h-auto object-cover"
             />
           ) : item.type === 'video' ? (
-            <video controls className="w-full h-auto">
-              <source src={item.src} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            // <Suspense fallback={<>Loading</>}>
+              <ReactPlayer
+                url={item.src}
+                width={item.width}
+                height={item.height}
+                fallback={<>Loading</>}
+                controls
+              />
+            // </Suspense>
           ) : null}
         </div>
       ))}

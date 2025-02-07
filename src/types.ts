@@ -2,6 +2,8 @@ export interface MediaItem {
   type: "image" | "video";
   src: string;
   alt?: string;
+  width?: number;
+  height?: number;
 }
 
 export interface LinkItem {
