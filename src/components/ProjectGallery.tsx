@@ -1,6 +1,6 @@
 // components/ProjectGallery.tsx
 'use client'
-import React, { Suspense } from 'react';
+import React from 'react';
 import { MediaItem } from '../types';
 import Image from 'next/image';
 import ReactPlayer from 'react-player';
