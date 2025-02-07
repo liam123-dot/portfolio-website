@@ -51,8 +51,9 @@ export const projects: Project[] = [
   {
     id: 'ticketstar',
     title: 'Ticket marketplace app',
-    description: 'An IOS and Android app that allowed users to resell event tickets at my University',
-    detailedDescription: '',
+    description: 'An IOS and Android app that allowed users to resell event tickets at my university',
+    detailedDescription: 'I built this app due to the large number of scams that take place at my university due to people buying and selling tickets directly through a facebook group. I was able to get several hundred sign ups and faciliate a few transactions before having to shut down due to the reselling policies of the events. Despite this, this project was my first where I learned and implemented a client/server architecture with an effective backend and secure user authentication.',
+    technicalDescription: 'The app was made with React Native and Typescript. For the backend I used Python with AWS Lambda, Cognito and S3, utilising the AWS SAM (Serverless Application Model), as well as a serverless MySQL database provided by Planetscale. It also integrated with Stripe to accept payments and payout to sellers, utilising webhooks for payment confirmation and notifications.',
     gallery: [
       {
         type: 'image',
@@ -88,10 +89,16 @@ export const projects: Project[] = [
   {
     id: 'ticket-bot',
     title: 'Ticketing Bot',
-    description: 'Using Python, I built a bot that allowed me to buy event tickets that were incredibly difficult to get due to high demand and an app that would crash due to the demand',
-    detailedDescription: '',
-    // gallery: {
-    // },
+    description: 'Using Python, I built a bot that allowed me to buy event tickets that were incredibly difficult to get due to high demand and an app that would crash due to the demand; and a website that allowed me to sell these.',
+    detailedDescription: 'This was my first project that served a real useful purpose to me, and was my intro into HTTP requests and API design. I reverse engineered the API that the ticketing website used and directly used the Python requsts module to allow me to create accounts and buy tickets. I also made a website to sell these tickets which reached £2000 a month in revenue and served 250+ customers.',
+    technicalDescription: 'For this bot I had a simple approach. I created a Python class that represended an account, this would log in and retrieve the correct cookies and tokens to buy tickets. It would then consantly moniter the website for when tickets released and instantly reserve and purchase. Once I got it working, I set up an AWS EC2 instance to host the bot so it was always running and had low latency. To get scale, I implemented multi-threading, so each thread would run one of the account objects and check for ticket drops, and the different threads would safetly communicate between each other to notify others when releases happened. The website I created allowed users to select from the tickets I have and pay for them, I also set up an affiliate system which tracked who brought me customers, and they would receive a share of the profit.',
+    links: {
+      github: [
+        {
+          url: 'https://github.com/liam123-dot/TicketWebsite', label: 'Website Github' 
+        }
+      ]
+    },
     keySkills: [
       'HTTP Requests',
       'Reverse Engineered API',

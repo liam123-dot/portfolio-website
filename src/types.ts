@@ -22,6 +22,7 @@ export interface Project {
   title: string;
   description: string;
   detailedDescription: string;
+  technicalDescription?: string;
   gallery?: MediaItem[];
   links?: Links;
   keySkills: string[];

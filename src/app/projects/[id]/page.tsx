@@ -37,6 +37,12 @@ const ProjectDetail: React.FC = () => {
         <p className="my-2 text-gray-700 dark:text-gray-300">
           {project.detailedDescription}
         </p>
+        {project.technicalDescription && (
+          <p className="mt-4 text-gray-700 dark:text-gray-300">
+            <span className="font-semibold">Technical Description: </span>
+            {project.technicalDescription}
+          </p>
+        )}
         {project.keySkills && project.keySkills.length > 0 && (
           <div className="mb-3">
             <h3 className="text-sm text-gray-700 dark:text-gray-300 mb-1">
