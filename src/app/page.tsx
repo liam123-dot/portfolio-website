@@ -26,7 +26,7 @@ const Home: React.FC = () => {
               currently a student at the University of Exeter, set to finish my
               bachelors in July 2025. I am an advanced Python developer, with
               intermediate/advanced skills in Typescript/Javascript, Next.js/React.js,
-              and Java. Through my university degree and a lot of self teaching,
+              and Java. Through my university degree and plenty of self teaching,
               I also have good knowledge of REST APIs, web scraping, Docker, AWS,
               and asynchronous development.
             </p>

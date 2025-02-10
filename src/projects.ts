@@ -106,5 +106,34 @@ export const projects: Project[] = [
       'Web Scraping',
       'Multi Threading'
     ]
+  },
+  {
+    id: 'courtsync',
+    title: 'Courtsync',
+    description: 'Courtsync was a website I made to help tennis coaches organise their private tuition schedule and automate their billing. This was done in conjunction with another student who handled requirements collection from potential users.',
+    detailedDescription: 'Courtsync used react.js for the frontend and a Python Flask backend. The backend was hosted on EC2 and I developed a CI/CD pipeline for automatic updates using github actions and the AWS Python SDK. This website could handle player bookings and complex management for the coaches. It also integrated with Stripe to provide automatic payment tracking and send reminders to players who hadn\'t paid. I also implemented calendar sync, so that coaches lessons would automatically sync with their Apple or Google calendar. On a whole, the system allowed coaches to not have to worry about their bookings or payments due to the fully automated system.',
+    links: {
+      github: [
+        {
+          url: 'https://github.com/liam123-dot/CourtSync', label: 'Github',
+        }
+      ]
+    },
+    gallery: [
+      {
+        type: 'image',
+        src: '/courtsync-ss.png',
+      }
+    ],
+    keySkills: [
+      'React.js',
+      'Javascript',
+      'Python',
+      'SQL',
+      'Stripe',
+      'AWS EC2',
+      'CI/CD',
+      'Authentication'
+    ]
   }
 ];
