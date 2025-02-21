@@ -25,7 +25,7 @@ const Home: React.FC = () => {
               show some of the projects I have made that I am proud of. I am
               currently a student at the University of Exeter, set to finish my
               bachelors in July 2025. I am an advanced Python developer, with
-              intermediate/advanced skills in Typescript/Javascript, Next.js/React.js,
+              intermediate/advanced skills in Typescript/Javascript, Next.js/React.js, C++,
               and Java. Through my university degree and plenty of self teaching,
               I also have good knowledge of REST APIs, web scraping, Docker, AWS,
               and asynchronous development.
